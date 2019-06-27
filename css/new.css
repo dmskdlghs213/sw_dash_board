@@ -1,0 +1,57 @@
+html{
+    display: inline-block;
+    
+}
+
+body{
+    background-color:white;
+    display: block;
+    margin:0px;
+    
+}
+header{
+    background-color:#333333;
+    height:50px;
+    width:100%;
+}
+h1{
+    font-size:70px;
+}
+h2{
+    font-size:30px;
+    margin:0px;
+    color:white;
+    margin-left: 20px;
+}
+
+.content{
+    text-align:center;
+    margin-top:50px;
+}
+dd{
+    display: inline;
+    margin-inline-start: 0px;
+    
+}
+input{
+    height: 30px;
+    border:5px solid #555555;
+}
+dt{
+    color:blue;
+}
+
+.btn{
+    background-color:blue;
+    color:white;
+}
+h3{
+    color: indianred;
+    font-family: 'Gill Sans';
+    font-size:50px;
+    display:inline-block;
+}
+h4{
+    margin:0px;
+    font-size:30px;
+}

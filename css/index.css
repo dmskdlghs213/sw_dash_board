@@ -1,0 +1,58 @@
+body{
+    /*background-image:url('../image/milky-way-2695569_1920.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    opacity: 1.0;
+    background-color: paleturquoise;*/
+    display: block;
+    margin:0px;
+    width:100%;
+}
+
+.head{
+    margin-top:65px;
+}
+.head a{
+    text-align:left;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+
+.navbar{
+    background-color:#333333;
+    color:white;
+}
+.navbar-toggler{
+    border:2px solid white;
+    background-color:white;
+}
+
+
+.navbar-brand{
+    color:white;
+}
+.navbar-nav{
+    color:white;
+}
+.content{
+    text-align:center;
+}
+
+dd{
+    margin-inline-start: 0px;
+}
+dt{
+    font-size:25px;
+}
+li{
+    display: inline;
+}
+
+.out{
+    font-size:30px;
+}
+p{
+    font-size:20px;
+}
