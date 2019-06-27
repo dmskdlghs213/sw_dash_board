@@ -59,7 +59,7 @@ if (!empty($_POST)) {
             <div id="content">
                 <div id="lead">
 
-                    <p>会員登録はこちらへ</p>
+                    <p>会員登録はこちら</p>
                     <p>&raquo;<a href="new/index.php">入会手続き</a></p>
                 </div>
                 <form action="" method="post">
