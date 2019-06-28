@@ -62,7 +62,7 @@ if ($_REQUEST['action'] == 'rewrite' && isset($_SESSION['join'])) {
 <body>
 
     <header>
-        <h2>スターウォーズ掲示板</h2>
+        <h2>StarWars掲示板</h2>
     </header>
     <main>
     <div class="container">

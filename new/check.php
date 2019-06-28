@@ -45,18 +45,18 @@ if (!empty($_POST)) {
 
             <div id="content">
                 <p>登録内容を確認しよう</p>
-                <br>
+
                 <form action="" method="post">
                     <input type="hidden" name="action" value="submit" />
                     <dl>
                         <dt>Your Name</dt>
                         <dd>
-                            <?php print(htmlspecialchars($_SESSION['join']['name'], ENT_QUOTES)); ?>
+                            <p><?php print(htmlspecialchars($_SESSION['join']['name'], ENT_QUOTES)); ?></p>
                         </dd>
                         <br><br>
                         <dt>Your Email</dt>
                         <dd>
-                            <?php print(htmlspecialchars($_SESSION['join']['email'], ENT_QUOTES)); ?>
+                            <p><?php print(htmlspecialchars($_SESSION['join']['email'], ENT_QUOTES)); ?></p>
                         </dd>
                         <br>
 

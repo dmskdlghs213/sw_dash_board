@@ -49,7 +49,7 @@ if (!empty($_POST)) {
 
 <body>
     <header>
-        <h2>スターウォーズ掲示板</h2>
+        <h2>StarWars 掲示板</h2>
     </header>
     <main>
         <div class="content">

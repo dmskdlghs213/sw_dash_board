@@ -7,6 +7,7 @@ body{
     background-color:white;
     display: block;
     margin:0px;
+    width:100%;
     
 }
 header{
@@ -31,22 +32,29 @@ h2{
 dd{
     display: inline;
     margin-inline-start: 0px;
-    
+   
+}
+
+dd p{
+    font-size:30px;
+    margin:0px;
 }
 input{
     height: 30px;
-    border:5px solid #555555;
+    border:2px solid #808000;
 }
 dt{
-    color:blue;
+    color:#808000;
+    font-size:30px;
+   
 }
 
 .btn{
-    background-color:blue;
+    background-color:#808000;
     color:white;
 }
 h3{
-    color: indianred;
+    color: #808000;
     font-family: 'Gill Sans';
     font-size:50px;
     display:inline-block;
@@ -54,4 +62,8 @@ h3{
 h4{
     margin:0px;
     font-size:30px;
+}
+.welcome p{
+    font-size:20px;
+    font-family: 'Lucida Sans';
 }

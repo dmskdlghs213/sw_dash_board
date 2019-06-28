@@ -56,5 +56,10 @@ p{
     font-size:20px;
 }
 .msg p{
-    font-size:50px;
+    font-size:40px;
+}
+.day{
+    font-size:20px;
+    text-align: right;
+    margin-right: 50px;
 }

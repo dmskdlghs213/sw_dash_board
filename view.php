@@ -30,7 +30,7 @@ $posts->execute(array($_REQUEST['id']));
 
 <body>
     <header>
-        <nav class="navbar navbar-toggleable-md">
+        <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -39,13 +39,13 @@ $posts->execute(array($_REQUEST['id']));
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="login.php">Logout</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="new/index.php">Signup</a>
                     </li>
 
                 </ul>
@@ -54,9 +54,7 @@ $posts->execute(array($_REQUEST['id']));
     </header>
     <main>
         <div class="content">
-            <div class="head">
-                <h1>スターウォーズ掲示板</h1>
-            </div>
+          
             <div id="content">
                 <p>&laquo;<a href="index.php">一覧にもどる</a></p>
                 <?php if ($post = $posts->fetch()) : ?>

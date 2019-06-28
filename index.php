@@ -48,7 +48,7 @@ $posts = $db->query('SELECT users.name ,posts.* FROM users,posts WHERE users.id 
 <body>
     <header>
 
-        <nav class="navbar navbar-toggleable-md">
+        <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -62,9 +62,6 @@ $posts = $db->query('SELECT users.name ,posts.* FROM users,posts WHERE users.id 
                     <li class="nav-item">
                         <a class="nav-link" href="login.php">Logout</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="new/index.php">Signup</a>
-                    </li>
 
                 </ul>
             </div>
@@ -74,28 +71,15 @@ $posts = $db->query('SELECT users.name ,posts.* FROM users,posts WHERE users.id 
     </header>
     <main>
         <div class="content">
-            <br>
+
             <div class="head">
-                <h1>スターウォーズ掲示板</h1>
-               
+                <h3>投稿一覧</h3>
+                <p>ユーザー名：<?php print(htmlspecialchars($member['name'], ENT_QUOTES)); ?></p>
+
             </div>
             <div class="content">
 
-                <form action="" method="post">
-                    <dl>
-                        <dt><?php print(htmlspecialchars($member['name'], ENT_QUOTES)); ?>さん、ようこそ</dt>
-                        <dd>
-                            <textarea name="message" cols="50" rows="5"></textarea>
-                            <input type="hidden" name="reply_post_id" value="" />
-                        </dd>
-                    </dl>
-                    <div>
-                        <p>
-                            <input type="submit" value="投稿する" />
-                        </p>
-                    </div>
-                </form>
-
+                <br>
                 <?php foreach ($posts as $post) : ?>
                     <div class="msg">
                         <p> <a href="view.php?id=<?php print(htmlspecialchars($post['id'])); ?> "> <?php print(htmlspecialchars($post['message'], ENT_QUOTES)); ?></a>
@@ -109,11 +93,22 @@ $posts = $db->query('SELECT users.name ,posts.* FROM users,posts WHERE users.id 
                     </div>
 
                 <?php endforeach; ?>
-                <ul class="paging">
-                    <li><a href="index.php?page=">前のページへ</a></li>
-                    <br><br>
-                    <li><a href="index.php?page=">次のページへ</a></li>
-                </ul>
+                <form action="" method="post">
+                    <dl>
+
+                        <br>
+                        <dd>
+                            <textarea name="message" cols="50" rows="5" placeholder="スターウォーズに関して投稿しよう！"></textarea>
+                            <input type="hidden" name="reply_post_id" value="" />
+                        </dd>
+                    </dl>
+                    <div>
+                        <p>
+                            <input type="submit" value="投稿する" />
+                        </p>
+                    </div>
+                </form>
+
             </div>
         </div>
     </main>
