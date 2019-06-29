@@ -28,7 +28,7 @@ $posts->execute(array($_REQUEST['id']));
     <link rel="stylesheet" href="css/view.css" />
 </head>
 
-<body>
+<body style="background-color: #DDDDDD;">
     <header>
         <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav">
@@ -54,20 +54,20 @@ $posts->execute(array($_REQUEST['id']));
     </header>
     <main>
         <div class="content">
-          
-            <div id="content">
-                <p>&laquo;<a href="index.php">一覧にもどる</a></p>
-                <?php if ($post = $posts->fetch()) : ?>
-                    <div class="msg">
+            <img src="image/milky-way-2695569_1920.jpg" alt="宇宙" style="width:100%; height:180px;">
 
-                        <p><?php print(htmlspecialchars($post['message'])); ?>
-                            <span class="name">（<?php print(htmlspecialchars($post['name'])); ?>）</span></p>
-                        <p class="day"><?php print(htmlspecialchars($post['created'])); ?></p>
-                    </div>
-                <?php else : ?>
-                    <p>その投稿は削除されたか、URLが間違えています</p>
-                <?php endif;  ?>
-            </div>
+            <p>&laquo;<a href="index.php">一覧にもどる</a></p>
+            <?php if ($post = $posts->fetch()) : ?>
+                <div class="msg">
+
+                    <p><?php print(htmlspecialchars($post['message'])); ?>
+                        <span class="name">（<?php print(htmlspecialchars($post['name'])); ?>）</span></p>
+                    <p class="day"><?php print(htmlspecialchars($post['created'])); ?></p>
+                </div>
+            <?php else : ?>
+                <p>その投稿は削除されたか、URLが間違えています</p>
+            <?php endif;  ?>
+        </div>
         </div>
     </main>
 </body>
