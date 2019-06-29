@@ -60,7 +60,7 @@ $posts = $db->query('SELECT users.name ,posts.* FROM users,posts WHERE users.id 
                         <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.php">Logout</a>
+                        <a class="nav-link" href="logout.php">Logout</a>
                     </li>
 
                 </ul>
@@ -71,11 +71,11 @@ $posts = $db->query('SELECT users.name ,posts.* FROM users,posts WHERE users.id 
     </header>
     <main>
         <div class="content">
-
+            <img src="image/milky-way-2695569_1920.jpg" alt="宇宙">
             <div class="head">
+
                 <h3>投稿一覧</h3>
                 <p>ユーザー名：<?php print(htmlspecialchars($member['name'], ENT_QUOTES)); ?></p>
-
             </div>
             <div class="content">
 
