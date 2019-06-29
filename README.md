@@ -12,4 +12,4 @@
 * アクセントカラー : #0000FF	
  
 ### タイポグラフィ
-*f ont-family: Lucida Sans
+* font-family: Lucida Sans
