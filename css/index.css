@@ -1,13 +1,21 @@
 body{
-    /*background-image:url('../image/milky-way-2695569_1920.jpg');
-    background-repeat: no-repeat;
-    background-size:cover;
-    opacity: 1.0;
+    /*
     background-color: paleturquoise;*/
     display: block;
     margin:0px;
     width:100%;
+
 }
+
+img{
+    width:100%;
+    height:180px
+}
+
+main{
+    background-color: #DDDDDD;
+}
+
 
 .head{
     margin-top:20px;
